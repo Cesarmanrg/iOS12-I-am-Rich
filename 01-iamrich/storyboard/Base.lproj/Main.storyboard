@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_iamrich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby" translatesAutoresizingMaskIntoConstraints="NO" id="i6H-pO-VxU">
+                                <rect key="frame" x="146" y="370" width="83" height="72"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAA-mL-eFi">
+                                <rect key="frame" x="97.666666666666686" y="265" width="180" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.92412227392196655" green="0.087071143090724945" blue="0.13468661904335022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiG-ns-iB0">
+                                <rect key="frame" x="59" y="541" width="257" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Pulsame y serás rico!">
+                                    <color key="titleColor" red="0.92412227390000001" green="0.087071143089999997" blue="0.13468661900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.41568167098445596" green="0.036248359843947732" blue="0.056357251031354451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ssE-Yz-dyA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21182319006817382" green="0.052131978421204261" blue="0.29705715673575128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JAA-mL-eFi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ze-Ah-5uD"/>
+                            <constraint firstItem="IiG-ns-iB0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dnd-GT-OS8"/>
+                            <constraint firstItem="i6H-pO-VxU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hm1-RP-cro"/>
+                            <constraint firstItem="IiG-ns-iB0" firstAttribute="top" secondItem="i6H-pO-VxU" secondAttribute="bottom" constant="99" id="TxE-2Z-yt2"/>
+                            <constraint firstItem="i6H-pO-VxU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="me0-Bm-3Pd"/>
+                            <constraint firstItem="i6H-pO-VxU" firstAttribute="top" secondItem="JAA-mL-eFi" secondAttribute="bottom" constant="57" id="yVy-1W-L4Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonPush" destination="IiG-ns-iB0" id="bbz-S9-eip"/>
+                        <outlet property="imageViewDiamond" destination="i6H-pO-VxU" id="Bxw-yL-ijh"/>
+                        <outlet property="labelTitle" destination="JAA-mL-eFi" id="ua3-g3-u0o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ruby" width="83" height="72.086540222167969"/>
+    </resources>
+</document>
